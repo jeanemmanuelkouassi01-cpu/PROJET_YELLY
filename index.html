@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOTEL & RESIDENCES YELLY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════ LOADER ══════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <img src="Images/Logo.jpg" alt="Logo Yelly" class="loader-logo-img" />
+      <div class="loader-logo">HOTEL & RESIDENCES YELLY</div>
+      <div class="loader-line"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ NAVBAR ══════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-star">✦</span>
+        <img src="Images/Logo.jpg" alt="Logo Yelly" class="logo-img" />
+        <div class="logo-copy">
+          <span class="logo-text">HOTEL & RESIDENCES</span>
+          <span class="logo-subtext">YELLY</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#chambres">Chambres</a></li>
+        <li><a href="#residences">Résidences</a></li>
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+      <button id="burger" class="burger" aria-label="Ouvrir le menu mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="#accueil" class="mob-link">Accueil</a>
+      <a href="#services" class="mob-link">Services</a>
+      <a href="#chambres" class="mob-link">Chambres</a>
+      <a href="#residences" class="mob-link">Résidences</a>
+      <a href="#restaurant" class="mob-link">Restaurant</a>
+      <a href="#contact" class="mob-link">Contacts</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+  <section id="accueil" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-shapes">
+        <div class="shape s1"></div>
+        <div class="shape s2"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-pretitle reveal">★ Abidjan, Côte d'Ivoire ★</p>
+      <h1 class="hero-title reveal">
+        L'art de vivre<br /><em>à son apogée.</em>
+      </h1>
+      <p class="hero-sub reveal">Hôtel Confortable · Résidences Privées · Restaurant </p>
+      <div class="hero-ctas reveal">
+        <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20chambre%20à%20l'Hôtel%20YELLY%20." target="_blank" class="btn-primary">
+          <i class="fab fa-whatsapp"></i> Réserver une chambre
+        </a>
+        <a href="#services" class="btn-outline">Découvrir</a>
+      </div>
+    </div>
+    
+    <!-- Stats floating -->
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">+10</span><span class="stat-label">Chambres</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">+10</span><span class="stat-label">Résidences</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">3 ★</span><span class="stat-label">Étoiles</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ BANDEAU ══════════════════════════════ -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>✦ Hôtel Confortable</span>
+      <span>✦ Résidences Privées</span>
+      <span>✦ Restaurant Gastronomique</span>
+      <span>✦ Service 24h/24</span>
+      <span>✦ Hôtel Confortable</span>
+      <span>✦ Résidences Privées</span>
+      <span>✦ Service 24h/24</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ SERVICES ══════════════════════════════ -->
+  <section id="services" class="section services-section">
+    <div class="section-header reveal">
+      <h2 class="section-title"   style="color: rgb(5, 5, 5);">Nos Services</h2>
+      <div class="title-deco">✦</div>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-icon"><i class="fas fa-bed"></i></div>
+        <h3>Hébergement Hôtel</h3>
+        <p>Plus de 10 chambres décorées avec raffinement, alliant confort moderne et élégance intemporelle pour un séjour inoubliable.</p>
+        <a href="#chambres" class="service-link">Voir les chambres <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal" data-delay="100">
+        <div class="service-icon"><i class="fas fa-home"></i></div>
+        <h3>Résidences de Luxe</h3>
+        <p>Plus de 10 résidences entièrement meublées et équipées, idéales pour les séjours prolongés en famille ou entre collègues.</p>
+        <a href="#residences" class="service-link">Voir les résidences <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card reveal" data-delay="200">
+        <div class="service-icon"><i class="fas fa-utensils"></i></div>
+        <h3>Restaurant Gastronomique</h3>
+        <p>Une cuisine raffinée mêlant saveurs locales et internationales, dans un cadre élégant avec vue sur la piscine.</p>
+        <a href="#restaurant" class="service-link">Voir le menu <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+  </section>
+
+  <!-- ══════════════════════════════ CHIFFRES ══════════════════════════════ -->
+  <div class="chiffres-bar">
+    <div class="chiffre reveal"><span class="chiffre-num" data-target="300">0</span><span>+</span><p>Clients Satisfaits</p></div>
+    <div class="chiffre reveal"><span class="chiffre-num" data-target="1">0</span><span>+</span><p>Années d'Excellence</p></div>
+    <div class="chiffre reveal"><span class="chiffre-num" data-target="30">0</span><span></span><p>Chambres & Suites</p></div>
+    <div class="chiffre reveal"><span class="chiffre-num" data-target="98">0</span><span>%</span><p>Taux de Satisfaction</p></div>
+  </div>
+
+  <!-- ══════════════════════════════ CHAMBRES ══════════════════════════════ -->
+  <section id="chambres" class="section chambres-section">
+    <div class="section-header reveal">
+      <p class="section-tag">Hébergement</p>
+      <h2 class="section-title"     style="color: rgb(5, 5, 5);" >Nos Chambres & Suites</h2>
+      <div class="title-deco">✦</div>
+    </div>
+    <div class="chambres-grid">
+
+      <div class="chambre-card reveal">
+        <div class="chambre-img chambre-standard">
+          <img
+    src="Images/Chambre 1.jpg"
+    alt="Chambre Standard - Hôtel Azur Palace"
+  />
+          <div class="chambre-overlay">
+            <span class="chambre-tag">Chambre Standard</span>
+          </div>
+        </div>
+        <div class="chambre-body">
+          <div class="chambre-info">
+            <h3>Chambre Standard</h3>
+            <p>Chambre climatisée avec lit king-size, Tv satellite, et salle de bain privée avec douche moderne.</p>
+          </div>
+          <div class="chambre-features">
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-snowflake"></i> Clim</span>
+            <span><i class="fas fa-tv"></i> TV Sat</span>
+        
+          </div>
+          <div class="chambre-footer">
+            <div class="chambre-price">Dès <strong>3000</strong> FCFA<small>/Passage</small></div>
+            <div class="chambre-price">Dès <strong>7000</strong> FCFA<small>/Nuit</small></div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Standard%20à%20l'Hôtel%20Azur%20Palace." target="_blank" class="btn-reserve">
+              <i class="fab fa-whatsapp"></i> Réserver
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chambre-card reveal">
+        <div class="chambre-img chambre-standard">
+          <img
+    src="Images/Chambre 2.jpg"
+    alt="Chambre Standard - Hôtel Azur Palace"
+  />
+          <div class="chambre-overlay">
+            <span class="chambre-tag">Chambre Standard</span>
+          </div>
+        </div>
+        <div class="chambre-body">
+          <div class="chambre-info">
+            <h3>Chambre Standard</h3>
+            <p>Chambre climatisée avec lit king-size, Tv satellite, et salle de bain privée avec douche moderne.</p>
+          </div>
+          <div class="chambre-features">
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-snowflake"></i> Clim</span>
+            <span><i class="fas fa-tv"></i> TV Sat</span>
+        
+          </div>
+          <div class="chambre-footer">
+            <div class="chambre-price">Dès <strong>3000</strong> FCFA<small>/Passage</small></div>
+            <div class="chambre-price">Dès <strong>7000</strong> FCFA<small>/Nuit</small></div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Standard%20à%20l'Hôtel%20Azur%20Palace." target="_blank" class="btn-reserve">
+              <i class="fab fa-whatsapp"></i> Réserver
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chambre-card reveal">
+        <div class="chambre-img chambre-standard">
+          <img
+    src="Images/Chambre 3.jpg"
+    alt="Chambre Standard - Hôtel Azur Palace"
+  />
+          <div class="chambre-overlay">
+            <span class="chambre-tag">Chambre Standard</span>
+          </div>
+        </div>
+        <div class="chambre-body">
+          <div class="chambre-info">
+            <h3>Chambre Standard</h3>
+            <p>Chambre climatisée avec lit king-size, Tv satellite, et salle de bain privée avec douche moderne.</p>
+          </div>
+          <div class="chambre-features">
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-snowflake"></i> Clim</span>
+            <span><i class="fas fa-tv"></i> TV Sat</span>
+        
+          </div>
+          <div class="chambre-footer">
+            <div class="chambre-price">Dès <strong>3000</strong> FCFA<small>/Passage</small></div>
+            <div class="chambre-price">Dès <strong>7000</strong> FCFA<small>/Nuit</small></div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Standard%20à%20l'Hôtel%20Azur%20Palace." target="_blank" class="btn-reserve">
+              <i class="fab fa-whatsapp"></i> Réserver
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chambre-card reveal">
+        <div class="chambre-img chambre-standard">
+          <img
+    src="Images/Chambre 4.jpg"
+    alt="Chambre Standard - Hôtel Azur Palace"
+  />
+          <div class="chambre-overlay">
+            <span class="chambre-tag">Chambre Standard</span>
+          </div>
+        </div>
+        <div class="chambre-body">
+          <div class="chambre-info">
+            <h3>Chambre Standard</h3>
+            <p>Chambre climatisée avec lit king-size, Tv satellite, et salle de bain privée avec douche moderne.</p>
+          </div>
+          <div class="chambre-features">
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-snowflake"></i> Clim</span>
+            <span><i class="fas fa-tv"></i> TV Sat</span>
+        
+          </div>
+          <div class="chambre-footer">
+            <div class="chambre-price">Dès <strong>3000</strong> FCFA<small>/Passage</small></div>
+            <div class="chambre-price">Dès <strong>7000</strong> FCFA<small>/Nuit</small></div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Standard%20à%20l'Hôtel%20Azur%20Palace." target="_blank" class="btn-reserve">
+              <i class="fab fa-whatsapp"></i> Réserver
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chambre-card reveal">
+        <div class="chambre-img chambre-standard">
+          <img
+    src="Images/Chambre 5.jpg"
+    alt="Chambre Standard - Hôtel Azur Palace"
+  />
+          <div class="chambre-overlay">
+            <span class="chambre-tag">Chambre Standard</span>
+          </div>
+        </div>
+        <div class="chambre-body">
+          <div class="chambre-info">
+            <h3>Chambre Standard</h3>
+            <p>Chambre climatisée avec lit king-size, Tv satellite, et salle de bain privée avec douche moderne.</p>
+          </div>
+          <div class="chambre-features">
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-snowflake"></i> Clim</span>
+            <span><i class="fas fa-tv"></i> TV Sat</span>
+        
+          </div>
+          <div class="chambre-footer">
+            <div class="chambre-price">Dès <strong>3000</strong> FCFA<small>/Passage</small></div>
+            <div class="chambre-price">Dès <strong>7000</strong> FCFA<small>/Nuit</small></div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Standard%20à%20l'Hôtel%20Azur%20Palace." target="_blank" class="btn-reserve">
+              <i class="fab fa-whatsapp"></i> Réserver
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chambre-card reveal">
+        <div class="chambre-img chambre-standard">
+          <img
+    src="Images/Chambre 6.jpg"
+    alt="Chambre Standard - Hôtel Azur Palace"
+  />
+          <div class="chambre-overlay">
+            <span class="chambre-tag">Chambre Standard</span>
+          </div>
+        </div>
+        <div class="chambre-body">
+          <div class="chambre-info">
+            <h3>Chambre Standard</h3>
+            <p>Chambre climatisée avec lit king-size, Tv satellite, et salle de bain privée avec douche moderne.</p>
+          </div>
+          <div class="chambre-features">
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-snowflake"></i> Clim</span>
+            <span><i class="fas fa-tv"></i> TV Sat</span>
+        
+          </div>
+          <div class="chambre-footer">
+            <div class="chambre-price">Dès <strong>3000</strong> FCFA<small>/Passage</small></div>
+            <div class="chambre-price">Dès <strong>7000</strong> FCFA<small>/Nuit</small></div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Standard%20à%20l'Hôtel%20Azur%20Palace." target="_blank" class="btn-reserve">
+              <i class="fab fa-whatsapp"></i> Réserver
+            </a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="chambre-card reveal">
+        <div class="chambre-img chambre-standard">
+          <img
+    src="Images/Chambre 8.jpg"
+    alt="Chambre Standard - Hôtel Azur Palace"
+  />
+          <div class="chambre-overlay">
+            <span class="chambre-tag">Chambre Standard</span>
+          </div>
+        </div>
+        <div class="chambre-body">
+          <div class="chambre-info">
+            <h3>Chambre Standard</h3>
+            <p>Chambre climatisée avec lit king-size, Tv satellite, et salle de bain privée avec douche moderne.</p>
+          </div>
+          <div class="chambre-features">
+            <span><i class="fas fa-wifi"></i> WiFi</span>
+            <span><i class="fas fa-snowflake"></i> Clim</span>
+            <span><i class="fas fa-tv"></i> TV Sat</span>
+        
+          </div>
+          <div class="chambre-footer">
+            <div class="chambre-price">Dès <strong>3000</strong> FCFA<small>/Passage</small></div>
+            <div class="chambre-price">Dès <strong>7000</strong> FCFA<small>/Nuit</small></div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20Chambre%20Standard%20à%20l'Hôtel%20Azur%20Palace." target="_blank" class="btn-reserve">
+              <i class="fab fa-whatsapp"></i> Réserver
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ RÉSIDENCES ══════════════════════════════ -->
+  <section id="residences" class="section residences-section">
+    <div class="residences-inner">
+      <div class="residences-left reveal">
+        <p class="section-tag">Séjour longue durée</p>
+        <h2 class="section-title">Résidences<br /><em>de Prestige</em></h2>
+        <div class="title-deco">✦</div>
+        <p class="residences-desc">Nos résidences meublées offrent tout le confort d'un appartement de luxe avec les services d'un hôtel 5 étoiles. Parfaites pour les expatriés, familles et professionnels en déplacement.</p>
+        <ul class="residences-list">
+          <li><i class="fas fa-check-circle"></i> Cuisine entièrement équipée</li>
+          <li><i class="fas fa-check-circle"></i> Salon & chambre(s) séparé(s)</li>
+          <li><i class="fas fa-check-circle"></i> Ménage quotidien inclus</li>
+          <li><i class="fas fa-check-circle"></i> Accès aux services de l'hôtel</li>
+          <li><i class="fas fa-check-circle"></i> Parking sécurisé gratuit</li>
+          <li><i class="fas fa-check-circle"></i> Connexion fibre optique</li>
+        </ul>
+        <div class="residences-ctas">
+          <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20suis%20intéressé%20par%20vos%20résidences%20à%20louer." target="_blank" class="btn-primary">
+            <i class="fab fa-whatsapp"></i> Demander un devis
+          </a>
+        </div>
+      </div>
+      <div class="residences-right reveal">
+        <div class="res-cards">
+          <div class="res-card">
+            <div class="res-card-icon"><i class="fas fa-home"></i></div>
+            <div>
+              <h4  style="color: rgb(5, 5, 5);">Studio Résidence</h4>
+              <p  style="color: rgb(5, 5, 5);">Idéal pour 1-2 personnes</p>
+              <strong>Dès ... FCFA/mois</strong>
+            </div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20louer%20un%20Studio%20Résidence." target="_blank" class="btn-sm"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="res-card res-featured">
+            <div class="res-card-icon"><i class="fas fa-building"></i></div>
+            <div>
+              <h4  style="color: rgb(248, 243, 243);">Appartement 2 pièces</h4>
+              <p style="color: rgb(252, 250, 250);">Idéal pour familles</p>
+              <strong>Dès ... FCFA/mois</strong>
+            </div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20louer%20un%20Appartement%202%20pièces." target="_blank" class="btn-sm"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="res-card">
+            <div class="res-card-icon"><i class="fas fa-city"></i></div>
+            <div>
+              <h4  style="color: rgb(5, 5, 5);">Penthouse 3 pièces</h4>
+              <p   style="color: rgb(5, 5, 5);">L'ultime résidence</p>
+              <strong>Dès ... FCFA/mois</strong>
+            </div>
+            <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20louer%20le%20Penthouse%203%20pièces." target="_blank" class="btn-sm"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ RESTAURANT ══════════════════════════════ -->
+  <section id="restaurant" class="section restaurant-section">
+    <div class="section-header reveal">
+      <p class="section-tag">Gastronomie</p>
+      <h2 class="section-title"  style="color: #030303;">Le Restaurant Yelly </h2>
+      <div class="title-deco">✦</div>
+      <p class="section-subtitle">Une expérience culinaire d'exception entre cuisine ivoirienne et internationale</p>
+    </div>
+    <div class="resto-grid">
+      <div class="resto-visual reveal">
+        <div class="resto-img-main"></div>
+        <div class="resto-badges">
+          <div class="resto-badge"><i class="fas fa-clock"></i><span>Ouvert 7j/7<br /><small>7h – 23h</small></span></div>
+          <div class="resto-badge"><i class="fas fa-users"></i><span>Capacité<br /><small>100 couverts</small></span></div>
+        </div>
+      </div>
+      <div class="resto-menu reveal">
+        <h3>À la Carte</h3>
+        <div class="menu-categories">
+          <button class="menu-cat active" data-cat="entrees">Entrées</button>
+          <button class="menu-cat" data-cat="plats">Plats</button>
+          <button class="menu-cat" data-cat="desserts">Desserts</button>
+        </div>
+        <div class="menu-items" id="menuItems">
+          <!-- Rempli par JS -->
+        </div>
+        <div class="resto-ctas">
+          <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver%20une%20table%20au%20Restaurant%20Yelly." target="_blank" class="btn-primary">
+            <i class="fab fa-whatsapp"></i> Réserver une table
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ TÉMOIGNAGES ══════════════════════════════ -->
+  <section class="section temoignages-section">
+    <div class="section-header reveal">
+      <p class="section-tag">Ce que disent nos clients</p>
+      <h2 class="section-title">Témoignages <em>& Avis</em></h2>
+      <div class="title-deco">✦</div>
+    </div>
+    <div class="temoignages-slider">
+      <div class="temoignages-track" id="temoignagesTrack">
+        <div class="temoignage-card">
+          <div class="stars">★★★★</div>
+          <p>"Un séjour absolument inoubliable. Le personnel est aux petits soins, les chambres sont magnifiques. Je recommande chaudement !"</p>
+          <div class="client"><div class="client-avatar">MK</div><div><strong>Marc Koffi</strong><small>Abidjan, Cote d'ivoire</small></div></div>
+        </div>
+        <div class="temoignage-card">
+          <div class="stars">★★★★★</div>
+          <p>"J'ai séjourné 3 semaines en résidence pour mon travail. Le confort était exceptionnel, les services hôteliers disponibles à tout moment. Une expérience unique à Abidjan."</p>
+          <div class="client"><div class="client-avatar">MK</div><div><strong>Marie Kakou</strong><small>Abidjan, Cote d'ivoire</small></div></div>
+        </div>
+        <div class="temoignage-card">
+          <div class="stars">★★★★★</div>
+          <p>"Les grandes chambres sontà couper le souffle.Tout était parfait pour notre anniversaire de mariage. Merci à toute l'équipe !"</p>
+          <div class="client"><div class="client-avatar">DT</div><div><strong>David & Thérèse</strong><small>Abidjan, CI</small></div></div>
+        </div>
+       
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CONTACT ══════════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header reveal">
+      <p class="section-tag">Nous joindre</p>
+      <h2 class="section-title">Contact & <em>Localisation</em></h2>
+      <div class="title-deco">✦</div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-infos reveal">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Adresse</h4>
+            <p>Carrefour Drapeau Blanc, Port Bouet (Gonzague)<br />Abidjan, Côte d'Ivoire</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp / Réservations</h4>
+            <a href="https://wa.me/2250779248657" target="_blank">+225 07 79 24 86 57</a>
+          </div>
+        </div>  
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Téléphone</h4>
+            <a href="tel:+2250103796155">+225 01 03 79 61 55</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:Koffikouamanaimekouassi@gmail.com">Koffikouamanaimekouassi@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/2250779248657" target="_blank" class="social-btn wa"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>  
+      <!-- Google Maps -->
+      <div class="contact-map reveal">
+        <iframe
+          src="https://maps.google.com/maps?q=5.240914,-3.876598&z=17&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localisation HOTEL & RESIDENCES YELLY">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="Images/Logo.jpg" alt="Logo Yelly" class="footer-logo-img" />
+        <span class="logo-star">✦</span>
+      
+        <p>L'ELEGANCE AU COEUR D'ABIDJAN</p>
+      </div>
+      <div class="footer-links-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#chambres">Chambres</a></li>
+          <li><a href="#residences">Résidences</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Spa & Bien-être</a></li>
+          <li><a href="#">Piscine</a></li>
+          <li><a href="#">Conférences</a></li>
+          <li><a href="#">Transfert Aéroport</a></li>
+          <li><a href="#">Service Traiteur</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>Réserver</h5>
+        <ul>
+          <li><a href="https://wa.me/2250779248657?text=Réservation%20chambre" target="_blank"><i class="fab fa-whatsapp"></i> Chambre</a></li>
+          <li><a href="https://wa.me/2250779248657?text=Réservation%20résidence" target="_blank"><i class="fab fa-whatsapp"></i> Résidence</a></li>
+          <li><a href="https://wa.me/2250779248657?text=Réservation%20table" target="_blank"><i class="fab fa-whatsapp"></i> Restaurant</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 HOTEL & RESIDENCES YELLY · Tous droits réservés · Abidjan, Côte d'Ivoire</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/2250779248657" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════ WHATSAPP FLOTTANT ══════════════════════════════ -->
+  <a href="https://wa.me/2250779248657?text=Bonjour,%20je%20souhaite%20réserver." target="_blank" class="wa-float" title="Nous contacter sur WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <!-- ══════════════════════════════ BACK TO TOP ══════════════════════════════ -->
+  <button class="back-top" id="backTop" title="Retour en haut"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
